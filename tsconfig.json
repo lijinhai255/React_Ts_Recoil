@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "noImplicitAny":false,// 不需要显示的声明变量的类型any
+    "target": "es5",// 编译后的目标javaScript版本，ES5 ES6
+    "lib": [// 列出编译期间需要被包括进去的库文件
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,// 允许混合编译JavaScript
+    "skipLibCheck": true,
+    "esModuleInterop": true,// 允许使用commonjs的方式 import 的默认文件
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",// 代码的模块系统常见的NodeJs的CommonJS ES6标准的esnext系统 以及require的AMD系统
+    "moduleResolution": "node",//确定了编译器的工作方式 也决定了🧍‍♂️文件之间的调用、import工作流程 node和classic
+    "resolveJsonModule": true,
+    "isolatedModules": true,// 编译器会将各个文件作为单独的模块来使用
+    "noEmit": true,//  表示发生错误时，编译器不会生成javascript代码
+    "jsx": "react",
+    "plugins": [{"name":"typescript-plugin-css-modules"}]
+  },
+  "include": [
+    "src"
+  ]
+}
